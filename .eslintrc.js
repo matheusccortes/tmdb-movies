@@ -21,13 +21,12 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json',
   },
-  plugins: [
-    'react',
-    'react-native',
-    '@typescript-eslint',
-  ],
+  plugins: ['react', 'react-native', '@typescript-eslint'],
   rules: {
     'react/react-in-jsx-scope': 'off',
-    '@typescript-eslint/no-use-before-define': ['error', { variables: false }],
+    '@typescript-eslint/no-use-before-define': ['error', {variables: false}],
+    '@typescript-eslint/no-namespace': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'import/prefer-default-export': 'off',
   },
 };
