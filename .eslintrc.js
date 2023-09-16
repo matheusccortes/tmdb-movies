@@ -24,6 +24,8 @@ module.exports = {
   plugins: ['react', 'react-native', '@typescript-eslint'],
   rules: {
     'react/react-in-jsx-scope': 'off',
+    'react/require-default-props': ['error', {functions: 'ignore'}],
+    'react/jsx-props-no-spreading': ['error', {custom: 'ignore'}],
     '@typescript-eslint/no-use-before-define': ['error', {variables: false}],
     '@typescript-eslint/no-namespace': 'off',
     'import/no-extraneous-dependencies': 'off',
