@@ -18,10 +18,8 @@ export function AppScreen({
     <View style={styles.container}>
       {scrollable ? (
         <ScrollView contentContainerStyle={styles.scrollView}>
-          <View style={styles.scrollViewInnerContainer}>
-            {headerTitle.length > 0 && <AppScreenHeader title={headerTitle} />}
-            {children}
-          </View>
+          {headerTitle.length > 0 && <AppScreenHeader title={headerTitle} />}
+          {children}
         </ScrollView>
       ) : (
         <>

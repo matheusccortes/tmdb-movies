@@ -8,10 +8,6 @@ export const styles = StyleSheet.create({
     padding: theme.spacing.lg,
   },
   scrollView: {
-    flex: 1,
-  },
-  scrollViewInnerContainer: {
-    flex: 1,
-    backgroundColor: theme.colors.background,
+    flexGrow: 1,
   },
 });
