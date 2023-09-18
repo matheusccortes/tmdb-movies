@@ -15,7 +15,7 @@ export function MovieCard({
   navigation,
 }: MovieCardProps) {
   const goToMovieDetailsScreen = () => {
-    navigation.navigate('MovieDetails', {movieId: id});
+    navigation.navigate('MovieDetails', {movieId: id, movieTitle: title});
   };
 
   return (

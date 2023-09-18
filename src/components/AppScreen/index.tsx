@@ -17,7 +17,9 @@ export function AppScreen({
   return (
     <View style={styles.container}>
       {scrollable ? (
-        <ScrollView contentContainerStyle={styles.scrollView}>
+        <ScrollView
+          contentContainerStyle={styles.scrollView}
+          showsVerticalScrollIndicator={false}>
           {headerTitle.length > 0 && <AppScreenHeader title={headerTitle} />}
           {children}
         </ScrollView>
