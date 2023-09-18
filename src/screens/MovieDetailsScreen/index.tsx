@@ -1,5 +1,6 @@
 import {useState, useEffect, useCallback} from 'react';
 import {View, Text, Image} from 'react-native';
+import {API_IMAGE_BASE_URL} from '@env';
 import {AppScreen} from '../../components/AppScreen';
 import {ActivityIndicator} from '../../components/ActivityIndicator';
 import {Button} from '../../components/Button';
@@ -53,7 +54,7 @@ export function MovieDetailsScreen({
           <Image
             style={styles.image}
             source={{
-              uri: `https://image.tmdb.org/t/p/w500${movie.poster_path}`,
+              uri: `${API_IMAGE_BASE_URL}/w500${movie.poster_path}`,
             }}
           />
           <Text style={styles.title}>{movie.title}</Text>

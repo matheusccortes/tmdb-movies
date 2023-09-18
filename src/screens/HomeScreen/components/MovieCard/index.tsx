@@ -1,5 +1,6 @@
 import {Pressable, Image, View, Text} from 'react-native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {API_IMAGE_BASE_URL} from '@env';
 import {StarIcon} from '../../../../assets/icons/StarIcon';
 import {RootStackParamList} from '../../../../routes/types';
 import {ListMovie} from '../../../../domain/movie/types';
@@ -22,7 +23,7 @@ export function MovieCard({
     <Pressable style={styles.container} onPress={goToMovieDetailsScreen}>
       <Image
         style={styles.image}
-        source={{uri: `https://image.tmdb.org/t/p/w500${poster_path}`}}
+        source={{uri: `${API_IMAGE_BASE_URL}/w500${poster_path}`}}
       />
       <View style={styles.body}>
         <Text style={styles.title}>{title}</Text>

@@ -38,3 +38,13 @@ export type Movie = Omit<ListMovie, 'genre_ids'> & {
   spoken_languages: SpokenLanguage[];
   production_countries: ProductionCountry[];
 };
+
+export type MovieImage = {
+  aspect_ratio: number;
+  height: number;
+  width: number;
+  iso_639_1: string;
+  file_path: string;
+  vote_average: number;
+  vote_count: number;
+};
